@@ -1,5 +1,5 @@
 /* To print
-
+eg:
 *****
 *****
 *****
@@ -10,14 +10,14 @@
 using namespace std;
 int main()
 {
-int i,j;
-for(i=0;i<3;i++)
-{
-for(j=0;j<5;j++)
-{
-cout<<"*";
-}
-cout<<endl;
-}
-
+  int i,j,n,m;
+  cin>>n>>m;
+  for(i=0;i<n;i++)//no. of rows
+  {
+    for(j=0;j<m;j++)//no. of coloumns 
+    {
+      cout<<"*";
+    }
+  cout<<endl;
+  }
 }
