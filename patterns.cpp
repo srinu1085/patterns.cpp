@@ -1212,8 +1212,704 @@ int main()
   }
 }
 
+/* printing
+eg:
+ 1 2 3 4 5 
+  1 2 3 4
+   1 2 3
+    1 2 
+     1
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>0;i--)
+  {
+    for(int j=n;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=i;k++)
+    {
+      cout<<k<<" ";
+    }
+    cout<<endl;
+  }
+}
 
 
+/* printing
+eg:
+EEEEE
+ DDDD
+  CCC
+   BB
+    A
+*/
 
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>0;i--)
+  {
+    for(int j=n;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=0;k<i;k++)
+    {
+      cout<<char(64+i);
+    }
+    cout<<endl;
+  }
+}
+
+
+/*printing 
+eg:
+E E E E E 
+ D D D D
+  C C C
+   B B
+    A
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>0;i--)
+  {
+    for(int j=n;j>i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=0;k<i;k++)
+    {
+      cout<<char(64+i)<<" ";
+    }
+    cout<<endl;
+  }
+}
     
   
+/*printing
+eg:
+ABCDE
+ ABCD
+  ABC
+   AB
+    A
+*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>0;i--)
+  {
+    for(int j=n;j>i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=0;k<i;k++)
+    {
+      cout<<char(65+k);
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+A B C D E
+ A B C D
+  A B C
+   A B
+    A
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>0;i--)
+  {
+    for(int j=n;j>i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=0;k<i;k++)
+    {
+      cout<<char(65+k);
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+  *  
+  *
+*****
+  *
+  *
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<=n;j++)
+    {
+      if(i==3 || j==3)
+      {
+        cout<<"*";
+      }
+      else
+      {
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+oo*oo
+oo*oo
+*****
+oo*oo
+oo*oo
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<=n;j++)
+    {
+      if(i==(n/2)+1 || j==(n/2)+1)
+      {
+        cout<<"*";
+      }
+      else
+      {
+        cout<<"o";
+      }
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+xoooo
+oxooo
+ooxoo
+oooxo
+oooox
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<=n;j++)
+    {
+      if(j==i)
+      {
+        cout<<"x";
+      }
+      else
+      {
+        cout<<"o";
+      }
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+x----
+-x---
+--x--
+---x-
+----x
+*/
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<=n;j++)
+    {
+      if(j==i)
+      {
+        cout<<"x";
+      }
+      else
+      {
+        cout<<"-";
+      }
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+*   *
+ * *
+  *
+ * *
+*   *
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<=n;j++)
+    {
+      if(j==i || i+j==n+1)//another logic   if(j==i || j==n-i+1)
+      {
+        cout<<"*";
+      }
+      
+      else
+      {
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+#####
+#   #
+#   #
+#   #
+#####
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<=n;j++)
+    {
+      if(i==1 || j==1 || i==n || j==n)
+      {
+        cout<<"#";
+      }
+      
+      else
+      {
+        cout<<" ";
+      }
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+   *  
+  *** 
+ *****
+*******
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=0;i<n;i++)
+  {
+    for(int j=n;j>i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<"*";  
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+//another method if-else
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int px=n,py=n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<n*2;j++)
+    {
+      if(j>=px && j<=py)
+      {
+        cout<<"*";
+      }
+      else
+      {
+        cout<<" ";
+      }
+    }
+    px--;
+    py++;
+    cout<<endl;
+  }
+}
+
+
+
+/* printing
+eg:
+    1
+   222
+  33333
+ 4444444
+555555555
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<i;
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+/* printing 
+eg:
+    1
+   333
+ 7777777
+999999999
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<z;
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+     1
+    123
+   12345
+  1234567
+ 123456789
+ */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<k;
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+     1  
+    321 
+   54321
+  7654321
+ 987654321
+ */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=z;k>=1;k--)
+    {
+      cout<<k;
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+     0
+    101
+   21012
+  3210123
+ 432101234
+ */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<abs(k-i);//abs returns positive value
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+     1
+    121
+   12321
+  1234321
+ 123454321
+ */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=i-1;k>=-(i-1);k--)
+    {
+      cout<<i-abs(k);
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+    A
+   BBB
+  CCCCC
+ DDDDDDD
+EEEEEEEEE
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<char(64+i);
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+    A
+   ABC
+  ABCDE
+ ABCDEFG
+ABCDEFGHI
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n,z=1;
+  cin>>n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=n;j>i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<char(64+k);
+    }
+    z=z+2;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+*******
+ *****
+  ***
+   *
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int px=1,py=(n*2)-1;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<n*2;j++)
+    {
+      if(j>=px && j<=py)
+      {
+        cout<<"*";
+      }
+      else
+      {
+        cout<<" ";
+      }
+    }
+    px++;
+    py--;
+    cout<<endl;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
