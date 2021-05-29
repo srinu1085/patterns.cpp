@@ -25,7 +25,7 @@ int main()
           cout<<"* ";
         }
       }
-      else if(i>1 || i<=(n/2)+1)
+      else if(i>1 && i<=(n/2))
       {
         cout<<"*";
       }
