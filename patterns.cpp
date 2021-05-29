@@ -1899,6 +1899,219 @@ int main()
   }
 }
 
+//anothe method
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int z=n*2-1;
+  for(int i=n;i>=1;i--)
+  {
+    for(int j=n-1;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<"*";
+    }
+    z-=2;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+4444444
+ 33333
+  222
+   1
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int z=n*2-1;
+  for(int i=n;i>=1;i--)
+  {
+    for(int j=n-1;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<i;
+    }
+    z-=2;
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+1234567
+ 12345
+  123
+   1
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int z=n*2-1;
+  for(int i=n;i>=1;i--)
+  {
+    for(int j=n-1;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<k;
+    }
+    z-=2;
+    cout<<endl;
+  }
+}
+
+
+/* prinitng 
+eg:
+7777777
+ 55555
+  333
+   1
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int z=n*2-1;
+  for(int i=n;i>=1;i--)
+  {
+    for(int j=n-1;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<k;
+    }
+    z-=2;
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+DDDDDDD
+ CCCCC
+  BBB
+   A
+*/
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int z=n*2-1;
+  for(int i=n;i>=1;i--)
+  {
+    for(int j=n-1;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<char(64+i);
+    }
+    z-=2;
+    cout<<endl;
+  }
+}
+
+/* printing
+eg:
+ABCDEFG
+ ABCDE
+  ABC
+   A
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int z=n*2-1;
+  for(int i=n;i>=1;i--)
+  {
+    for(int j=n-1;j>=i;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=1;k<=z;k++)
+    {
+      cout<<char(64+k);
+    }
+    z-=2;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+*     
+* *   
+* * * 
+* * * *
+* * *
+* *
+*
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=n;j>abs(i);j--)
+    {
+      cout<<"*"<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+
+
+
+
+
+
 
 
 
