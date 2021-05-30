@@ -25,17 +25,10 @@ int main()
           cout<<"* ";
         }
       }
-      else if(i>1 && i<=(n/2))
+      else if(i>1 || i<=(n/2))
       {
         cout<<"*";
       }
-      else
-      {
-        for(int k=n;k=n;k++)
-        { 
-          cout<<"*";
-        }
-      } 
       cout<<endl;
     }
   }
