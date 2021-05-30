@@ -2108,6 +2108,340 @@ int main()
 
 
 
+/* printing 
+eg:
+3 
+3 2
+3 2 1
+3 2 1 0
+3 2 1
+3 2
+3
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=n;j>abs(i);j--)
+    {
+      cout<<j<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+
+/* prinitng
+eg:
+3 
+2 2
+1 1 1
+0 0 0 0
+1 1 1
+2 2
+3
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=n;j>abs(i);j--)
+    {
+      cout<<abs(i)<<" ";//abs gives the positive value of i
+    }
+    cout<<endl;
+  }
+}
+
+
+/* prinintg
+eg:
+3 
+2 3
+1 2 3
+0 1 2 3
+1 2 3
+2 3
+3
+*/
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=abs(i);j<=n;j++)
+    {
+      cout<<j<<" ";
+    }
+    cout<<endl;
+  }  
+}
+
+
+/* printing 
+eg:
+   *
+  **
+ ***
+****
+ ***
+  **
+   *
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)//outer loop
+  {
+    for(int j=abs(i);j>=1;j--)//space loop
+    {
+      cout<<" ";
+    }
+    for(int k=n;k>=abs(i);k--)//print loop
+    {
+      cout<<"*";
+    }
+    cout<<endl;
+  }
+}
+
+
+/* priniting
+eg:
+   * 
+  * *
+ * * *
+* * * *
+ * * *
+  * *
+   *
+*/
+
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=abs(i);j>=1;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=n;k>=abs(i);k--)
+    {
+      cout<<"* ";
+    }
+    cout<<endl;
+  }
+}
+
+
+ /* prinintg
+ eg:
+   3
+  32
+ 321
+3210
+ 321
+  32
+   3
+ */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=abs(i);j>=1;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=n;k>=abs(i);k--)
+    {
+      cout<<k;
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing
+eg:
+   3 
+  2 2
+ 1 1 1
+0 0 0 0
+ 1 1 1
+  2 2
+   3
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=abs(i);j>=1;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=n;k>=abs(i);k--)
+    {
+      cout<<abs(i)<<" ";
+    }
+    cout<<endl;
+  }
+}
+
+
+/* prinitng
+eg:
+   1 
+  2 2
+ 3 3 3
+4 4 4 4
+ 3 3 3
+  2 2
+   1
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  int p=1;
+  cin>>n;
+  for(int i=n;i>=-n;i--)
+  {
+    for(int j=abs(i);j>=1;j--)
+    {
+      cout<<" ";
+    }
+    for(int k=n;k>=abs(i);k--)
+    {
+      cout<<p<<" ";
+    }
+    if(i>0)
+    {
+      p++;
+    }
+    else
+    {
+      p--;
+    }
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+     *    
+    * *
+   *   *
+  *     *
+ *       *
+ */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int px=n,py=n;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=0;j<n*2;j++)
+    {
+     if(j==px || j==py)
+     {
+       cout<<"*";
+     }
+     else
+     {
+       cout<<" ";
+     }
+    }
+    px--;
+    py++;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+*       *
+ *     *
+  *   *
+   * *
+    *
+ */
+
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;
+  cin>>n;
+  int px=1,py=n*2-1;
+  for(int i=1;i<=n;i++)
+  {
+    for(int j=1;j<n*2;j++)
+    {
+     if(j==px || j==py)
+     {
+       cout<<"*";
+     }
+     else
+     {
+       cout<<" ";
+     }
+    }
+    px++;
+    py--;
+    cout<<endl;
+  }
+}
+
+
+/* printing 
+eg:
+
+
+
+
+
 
 
 
